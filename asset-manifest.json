@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3aec941d.css",
+    "main.css": "/portfolio/static/css/main.dba149b0.css",
     "main.js": "/portfolio/static/js/main.6e59317a.js",
     "static/media/recortada.png": "/portfolio/static/media/recortada.9e72a2c3038d7c5505ce.png",
     "index.html": "/portfolio/index.html",
-    "main.3aec941d.css.map": "/portfolio/static/css/main.3aec941d.css.map",
+    "main.dba149b0.css.map": "/portfolio/static/css/main.dba149b0.css.map",
     "main.6e59317a.js.map": "/portfolio/static/js/main.6e59317a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aec941d.css",
+    "static/css/main.dba149b0.css",
     "static/js/main.6e59317a.js"
   ]
 }
