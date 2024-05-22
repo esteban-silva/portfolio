@@ -26,11 +26,6 @@
     }
 }
 
-#header-nav {
-    animation: blur linear both 0.5s;
-    animation-timeline: scroll();
-    animation-range: 0 500px;
-}
 
 @keyframes blur {
     to {
@@ -73,10 +68,13 @@
     }
 }
 
-nav {
-    animation: nav-shadown 1s linear both;
-    animation-timeline: scroll();
+#header-nav {
+    animation-name: nav-shadown;
+    animation-duration: 1s;
     animation-range: 0 100px;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
 }
 
 @keyframes nav-shadown {
