@@ -7,10 +7,6 @@
     min-height: 100vh;
 }
 
-/* .scheme {
-    color-scheme: light dark;
-} */
-
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -26,7 +22,7 @@
 @media (prefers-color-scheme: light) {
     body {
         color: rgba(0, 0, 0, 0.9);
-        
+
     }
 }
 
@@ -74,5 +70,17 @@
             background-color: rgba(0, 0, 0, 0.3);
             border-radius: 9999px;
         }
+    }
+}
+
+nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+}
+
+@keyframes nav-shadown {
+    to {
+        @apply shadow-lg ring-1 backdrop-blur dark:bg-gray-800/90 bg-white/50 ring-white/10;
     }
 }
