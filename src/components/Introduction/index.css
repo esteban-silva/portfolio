@@ -1,0 +1,7 @@
+.intro-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
