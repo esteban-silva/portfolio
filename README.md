@@ -1,5 +1,5 @@
 # About the Project
 
-A small Portfolio where I will upload incoming projects Im working on...
+This is where I'll showcase the projects I'm currently working on.
 
-## Production URL: http://esteban-silva-portfolio.s3-website-sa-east-1.amazonaws.com/
+### URL: http://portfolio.esteban-silva.xyz/
