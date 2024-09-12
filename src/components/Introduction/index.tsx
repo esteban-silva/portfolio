@@ -2,15 +2,19 @@ import * as React from "react";
 import "./index.css";
 import IntroImage from "../../../src/assets/recortada.png";
 import Chip from "../../sharedComponents/Chip";
-import { CiLinkedin } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
-
 import SocialChip from "../../sharedComponents/SocialChip";
 import { LanguageContext } from "../Language/LanguageProvider";
 import { useContext } from "react";
+import CVIngles from "../../../src/assets/CV_Esteban_Silva_Ingles.pdf";
+import CVEspanol from "../../../src/assets/CV_Esteban_Silva_Espanol.pdf";
+import { FaDownload } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 
 const Introduction = () => {
-  const { translate } = useContext(LanguageContext);
+  const { translate, currentLanguage } = useContext(LanguageContext);
   return (
     <div id="introduction" className="py-44 w-[640px]">
       <div className="flex gap-5">
@@ -19,7 +23,7 @@ const Introduction = () => {
           <a
             href="https://www.linkedin.com/in/estebansilvac"
             target="_blank"
-            style={{ borderRadius: "9999px" }}
+            style={{ borderRadius: "9999px" }} rel="noreferrer"
           >
             {translate("introduction_button_available").title}
           </a>
@@ -34,12 +38,16 @@ const Introduction = () => {
       </p>
       <div className="flex flex-wrap gap-4 mt-8">
         <SocialChip href="mailto:esteban_silva11@hotmail.com">
-          <CiMail />
+          <IoMdMail />
           {translate("social_button_contact").title}
         </SocialChip>
         <SocialChip href="https://www.linkedin.com/in/estebansilvac">
-          <CiLinkedin />
+          <FaLinkedin />
           Linkedin
+        </SocialChip>
+        <SocialChip href={currentLanguage === "es" ? CVEspanol : CVIngles} download="CV_Esteban_Silva.pdf">
+          <FaDownload />
+          CV
         </SocialChip>
       </div>
     </div>

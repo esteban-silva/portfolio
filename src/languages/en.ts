@@ -74,6 +74,16 @@ const en = [
     label: "English",
     title: "English",
   },
+  {
+    name: "projects-break-point-frontend",
+    label: "",
+    title: "Frontend of a website called Break-point, whose purpose is to allow people to book tennis courts, view and reserve class hours during the week. This idea came up due to the lack of websites in Uruguay, and I thought it could be something innovative. The site is hosted in an S3 Bucket, and deployments are done automatically by pushing to the main branch through GitHub Actions.",
+  },
+  {
+    name: "projects-break-point-backend",
+    label: "",
+    title: "Backend used by the Break-point frontend, whose purpose is to store and manage the flow of information necessary for its operation. It was created using Node.js and Express. It is hosted on AWS (EC2, RDS, and Route53), with a pipeline via GitHub Actions and uses Docker that performs an automatic deployment when pushing to the master branch.",
+  }
 ];
 
 export default en;

@@ -74,6 +74,16 @@ const es = [
     label: "Ingles",
     title: "Ingles",
   },
+  {
+    name: "projects-break-point-frontend",
+    label: "",
+    title: "Frontend  de pagina web llamada Break-point cuyo proposito es que la gente pueda reservar canchas de tenis, ver y reservar horas de clases en la semana. Esto surge por una falta de webs en Uruguay y se me ocurrio la idea de que quiza pueda ser algo innovador. La misma esta alojada en un Bucket S3 y los deploy se hacen automaticamente al hacer push a la rama main mediante GitHub Actions.",
+  },
+  {
+    name: "projects-break-point-backend",
+    label: "",
+    title: "Backend utilizado por break-point frontend cuyo proposito es almacenar y manejar el flujo de informacion necesario para su funcionamiento. La misma fue creada usando Nodejs y Express. La misma esta alojada en AWS (EC2, RDS y Route53) y pipeline mediante GitHub Actions el cual hace un deploy automatico al hacer push a la rama master.",
+  }
 ];
 
 export default es;
